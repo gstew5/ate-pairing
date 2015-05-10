@@ -16,7 +16,7 @@ LDFLAGS = -lm -lzm $(LIB_DIR) -lgmp -lgmpxx
 AS = nasm
 AFLAGS = -f elf -D__unix__
 ifeq ($(SUPPORT_SNARK),1)
-CFLAGS += -DBN_SUPPORT_SNARK
+CFLAGS += -DBN_SUPPORT_SNARK -fPIC
 endif
 
 # for only 64-bit
